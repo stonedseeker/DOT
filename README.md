@@ -19,3 +19,14 @@ All agents communicate using structured MCP messages:
     "query": "What are the KPIs?"
   }
 }
+```
+
+### Quick Start
+```
+git clone https://github.com/your-username/agentic-rag-chatbot.git
+cd agentic-rag-chatbot
+pip install -r requirements.txt
+export OPENAI_API_KEY="your-openai-api-key"
+streamlit run ui/streamlit_app.py
+```
+
