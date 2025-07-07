@@ -24,7 +24,7 @@ All agents communicate using structured MCP messages:
 ### Quick Start
 ```
 git clone https://github.com/stonedseeker/DOT
-cd agentic-rag-chatbot
+cd DOT
 pip install -r requirements.txt
 export OPENAI_API_KEY="your-openai-api-key"
 streamlit run ui/streamlit_app.py
