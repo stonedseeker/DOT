@@ -40,7 +40,7 @@ def main():
         layout="wide"
     )
     
-    st.title("🤖 Agentic RAG Chatbot with MCP")
+    st.title("Agentic RAG Chatbot with MCP")
     st.markdown("Upload documents and ask questions using our multi-agent system!")
     
     # Initialize agents
@@ -138,10 +138,10 @@ def main():
     # System information
     with st.expander("🔧 System Information"):
         st.write("**Agents Status:**")
-        st.write("✅ Ingestion Agent: Active")
-        st.write("✅ Retrieval Agent: Active") 
-        st.write("✅ LLM Response Agent: Active")
-        st.write("✅ Coordinator Agent: Active")
+        st.write("Ingestion Agent: Active")
+        st.write("Retrieval Agent: Active") 
+        st.write("LLM Response Agent: Active")
+        st.write("Coordinator Agent: Active")
         
         st.write(f"**Documents Processed:** {len(st.session_state.uploaded_files)}")
 
