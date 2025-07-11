@@ -4,12 +4,14 @@ from .base_agent import BaseAgent
 from mcp.message_protocol import MCPMessage, MessageType
 import openai
 import os
+import streamlit as st
 
 class LLMResponseAgent(BaseAgent):
     def __init__(self):
         super().__init__("LLMResponseAgent")
         # Initialize OpenAI client (you can replace with any LLM)
-        self.client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+        api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+        self.client = openai.OpenAI(api_key=api_key)
     
     async def handle_message(self, message: MCPMessage):
         """Handle incoming messages"""
