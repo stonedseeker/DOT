@@ -5,6 +5,7 @@ import logging
 import os
 
 class EmbeddingGenerator:
+    # uses text-embedding-3-large by open-ai for embeddings
     def __init__(self, model_name: str = "text-embedding-3-large", api_key: str = None):
         self.model_name = model_name
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
